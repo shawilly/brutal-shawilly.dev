@@ -36,13 +36,13 @@ export default function ContactLinks() {
         return (
           <Button
             key={`btn-${link.name}`}
-            className="w-full cursor-pointer rounded-base border-2 border-border bg-white px-4 py-2 text-center text-sm font-base shadow-light transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none dark:border-darkBorder dark:bg-secondaryBlack dark:text-darkText dark:shadow-dark dark:hover:shadow-none sm:text-base"
+            className="w-full cursor-pointer rounded-base border-2 border-border bg-white px-4 py-2 text-center font-base shadow-light transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none dark:border-darkBorder dark:bg-secondaryBlack dark:text-darkText dark:shadow-dark dark:hover:shadow-none sm:text-base"
           >
             <Link
               target="_blank"
               key={id}
               href={link.href}
-              className="flex flex-row items-center justify-center gap-4"
+              className="flex flex-row items-center justify-center gap-4 font-[family-name:var(--font-sixtyfour)] text-2xl"
             >
               <link.icon
                 title={link.name}
