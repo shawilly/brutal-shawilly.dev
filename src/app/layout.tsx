@@ -1,5 +1,5 @@
 import Nav from '@/components/nav'
-import { ThemeProvider } from '@/components/theme-provider'
+import { ThemeProvider } from 'next-themes'
 import type { Metadata } from 'next'
 import { ViewTransitions } from 'next-view-transitions'
 import { Pixelify_Sans, Press_Start_2P, Sixtyfour } from 'next/font/google'

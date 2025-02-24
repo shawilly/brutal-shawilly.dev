@@ -5,7 +5,7 @@ import { ChevronDown, ChevronUp } from 'lucide-react'
 import { Link } from 'next-view-transitions'
 import { usePathname, useRouter } from 'next/navigation'
 import { useEffect, useRef, useState } from 'react'
-import { ThemeSwitcher } from './theme-switcher'
+import { ThemeSwitcher } from './theme-switch/theme-switcher'
 import { Button } from './ui/button'
 
 export default function Nav() {
