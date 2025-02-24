@@ -42,7 +42,7 @@ export default function ContactLinks() {
               target="_blank"
               key={id}
               href={link.href}
-              className="flex flex-row items-center justify-center gap-4 font-[family-name:var(--font-sixtyfour)] text-2xl"
+              className="flex flex-row items-center justify-center gap-4 text-2xl"
             >
               <link.icon
                 title={link.name}

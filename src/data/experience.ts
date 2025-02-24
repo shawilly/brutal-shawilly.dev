@@ -10,7 +10,7 @@ const PAST_ROLES: {
     company: 'ResourceKraft & Full Stack Energy',
     role: 'Software Engineer',
     description:
-      'Developed and deployed energy management solutions, integrating EV charging protocols and optimizing smart charging algorithms to reduce energy waste and support renewable adoption.',
+      'Developed and deployed energy management solutions, leading development of a geothermal system monitoring application, leveraging MQTT and IoT devices for real-time complex data tracking via dashboard.',
     startDate: 'April 2024',
     endDate: 'Now',
     accomplishments: [
@@ -25,7 +25,7 @@ const PAST_ROLES: {
     role: 'Software Engineer',
     description:
       'Built and maintained internal tools, automated key business processes with microservices, and managed essential tooling to improve team efficiency and product scalability.',
-    startDate: 'November 2023',
+    startDate: 'January 2021',
     endDate: 'June 2024',
     accomplishments: [
       'Developed 40+ internal tools and features, streamlining operations across multiple teams',
