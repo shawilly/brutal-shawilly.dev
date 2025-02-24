@@ -22,7 +22,7 @@ export default function Experience() {
               <p>{role.description}</p>
             </div>
             {id < PAST_ROLES.length - 1 ? (
-              <Separator className="my-2 mb-8 pt-4" />
+              <Separator key={`${id}-separator`} className="my-2 mb-8 pt-4" />
             ) : null}
           </>
         )
