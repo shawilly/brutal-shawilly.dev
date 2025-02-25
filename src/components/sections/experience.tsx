@@ -19,10 +19,12 @@ export default function Experience() {
               <p className="mb-4 mt-0.5 text-sm">
                 {role.startDate} - {role.endDate}
               </p>
-              <p>{role.description}</p>
+              <p className="font-[family-name:var(--font-darker-grotesque)] text-base font-semibold tracking-wide sm:text-xl">
+                {role.description}
+              </p>
             </div>
             {id < PAST_ROLES.length - 1 ? (
-              <Separator key={`${id}-separator`} className="my-2 mb-8 pt-4" />
+              <Separator key={`${id}-separator`} className="my-8" />
             ) : null}
           </>
         )

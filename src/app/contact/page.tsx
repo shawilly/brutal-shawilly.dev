@@ -3,7 +3,7 @@ import ContactLinks from '@/components/contact-links'
 export default function Contact() {
   return (
     <div className="max-w-screen flex max-h-screen flex-col">
-      <h1 className="pt-8 font-[family-name:var(--font-press-start)] text-2xl font-heading text-slate-800 underline underline-offset-4 dark:text-yellow-300 sm:text-4xl">
+      <h1 className="py-8 font-[family-name:var(--font-nabla)] text-4xl tracking-wider invert dark:invert-0 sm:text-[4rem]">
         Get in touch
       </h1>
 

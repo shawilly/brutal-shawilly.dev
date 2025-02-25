@@ -16,7 +16,7 @@ export default function Testimonials() {
             key={id}
             className="rounded-base border-2 border-border bg-white px-4 py-2 text-sm font-base shadow-light transition-all dark:border-darkBorder dark:bg-secondaryBlack dark:text-darkText dark:shadow-dark sm:text-base"
           >
-            <p className="text-lg italic">
+            <p className="font-[family-name:var(--font-darker-grotesque)] text-base font-semibold tracking-wide sm:text-xl">
               &quot;{testimonial.testimonial}&quot;
             </p>
 
