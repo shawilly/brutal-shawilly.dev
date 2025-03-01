@@ -2,7 +2,7 @@
 
 import clsx from 'clsx'
 import { PanelTopOpen } from 'lucide-react'
-import { Link } from 'next-view-transitions'
+import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
 import { useEffect, useRef, useState } from 'react'
 import { ThemeSwitcher } from './theme-switch/theme-switcher'

@@ -1,7 +1,6 @@
 import Nav from '@/components/nav'
 import { ThemeProvider } from 'next-themes'
 import type { Metadata } from 'next'
-import { ViewTransitions } from 'next-view-transitions'
 import {
   Pixelify_Sans,
   Press_Start_2P,
@@ -45,19 +44,17 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <ViewTransitions>
-      <html lang="en">
-        <body
-          className={`${pixelifySans.variable} ${darkerGrotesque.variable} ${pressStart.variable} ${nabla.variable} antialiased`}
-        >
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            <Nav />
-            <div className="mx-auto w-[750px] max-w-full bg-[linear-gradient(to_right,#80808033_1px,transparent_1px),linear-gradient(to_bottom,#80808033_1px,transparent_1px)] bg-[size:70px_70px] px-5 pb-10 pt-28 font-[family-name:var(--font-pixelify)]">
-              {children}
-            </div>
-          </ThemeProvider>
-        </body>
-      </html>
-    </ViewTransitions>
+    <html lang="en">
+      <body
+        className={`${pixelifySans.variable} ${darkerGrotesque.variable} ${pressStart.variable} ${nabla.variable} antialiased`}
+      >
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <Nav />
+          <div className="mx-auto w-[750px] max-w-full bg-[linear-gradient(to_right,#80808033_1px,transparent_1px),linear-gradient(to_bottom,#80808033_1px,transparent_1px)] bg-[size:70px_70px] px-5 pb-10 pt-28 font-[family-name:var(--font-pixelify)]">
+            {children}
+          </div>
+        </ThemeProvider>
+      </body>
+    </html>
   )
 }
