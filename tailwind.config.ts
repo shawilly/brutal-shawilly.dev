@@ -44,6 +44,7 @@ const config: Config = {
       },
       screens: {
         w450: { raw: '(max-width: 450px)' },
+        w550: { raw: '(max-width: 550px)' },
       },
     },
   },

@@ -1,7 +1,7 @@
 'use client'
 
 import clsx from 'clsx'
-import { ChevronDown, ChevronUp } from 'lucide-react'
+import { PanelTopOpen } from 'lucide-react'
 import { Link } from 'next-view-transitions'
 import { usePathname, useRouter } from 'next/navigation'
 import { useEffect, useRef, useState } from 'react'
@@ -38,18 +38,14 @@ export default function Nav() {
   ]
 
   return (
-    <div className="fixed left-0 top-5 z-50 w-full font-[family-name:var(--font-pixelify)]">
-      <div className="mx-auto flex w-full max-w-screen-md items-center justify-between px-5">
+    <div className="fixed top-5 z-50 mx-auto w-screen font-[family-name:var(--font-pixelify)]">
+      <div className="mx-auto flex w-full max-w-screen-md cursor-pointer items-center justify-center px-5">
         <Button
-          className="sm:hidden"
+          className={clsx(isOpen ? 'hidden' : 'sm:hidden')}
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle navigation"
         >
-          {isOpen ? (
-            <ChevronUp className="h-6 w-6" />
-          ) : (
-            <ChevronDown className="h-6 w-6" />
-          )}
+          <PanelTopOpen />
         </Button>
 
         <nav

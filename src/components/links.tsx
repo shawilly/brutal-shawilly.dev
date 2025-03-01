@@ -22,7 +22,7 @@ export default function Links() {
   ]
 
   return (
-    <div className="mr-auto mt-20 flex w-full flex-wrap items-center gap-8">
+    <div className="mx-auto mt-20 flex w-full flex-col flex-wrap items-center justify-start gap-8 sm:flex-row sm:justify-center ">
       {links.map((link, id) => {
         return (
           <Button

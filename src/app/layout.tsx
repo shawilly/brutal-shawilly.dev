@@ -52,7 +52,7 @@ export default function RootLayout({
         >
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <Nav />
-            <div className="mx-auto w-[750px] max-w-full px-5 pb-10 pt-28 font-[family-name:var(--font-pixelify)]">
+            <div className="mx-auto w-[750px] max-w-full bg-[linear-gradient(to_right,#80808033_1px,transparent_1px),linear-gradient(to_bottom,#80808033_1px,transparent_1px)] bg-[size:70px_70px] px-5 pb-10 pt-28 font-[family-name:var(--font-pixelify)]">
               {children}
             </div>
           </ThemeProvider>

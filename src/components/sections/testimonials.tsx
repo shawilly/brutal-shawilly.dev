@@ -5,7 +5,7 @@ import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar'
 
 export default function Testimonials() {
   return (
-    <div className="mb-16">
+    <div className="mb-16 w-full px-4 py-2 text-sm font-base sm:text-base">
       <h2 className="mb-8 font-[family-name:var(--font-press-start)] text-xl font-heading underline underline-offset-8 dark:text-pink-400 sm:text-2xl">
         Testimonials
       </h2>
