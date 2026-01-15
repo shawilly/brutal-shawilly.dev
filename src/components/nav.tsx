@@ -55,8 +55,12 @@ export default function Nav() {
             isOpen ? 'flex' : 'hidden sm:flex',
           )}
         >
-          {links.map((link) => (
-            <Link key={link.path} href={link.path}>
+          {links.map((link, index) => (
+            <Link
+              key={link.path}
+              id={`nav-button-${index + 1}`}
+              href={link.path}
+            >
               <Button
                 key={`btn-${link.path}`}
                 className={clsx(

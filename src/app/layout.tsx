@@ -47,11 +47,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${pixelifySans.variable} ${darkerGrotesque.variable} ${pressStart.variable} ${nabla.variable} antialiased`}
+        className={`${pixelifySans.variable} ${darkerGrotesque.variable} ${pressStart.variable} ${nabla.variable} min-h-screen bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px] antialiased`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Nav />
-          <div className="mx-auto w-[900px] max-w-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px] px-5 pb-16 pt-28 font-[family-name:var(--font-pixelify)]">
+          <div className="mx-auto w-full max-w-5xl px-5 pb-16 pt-28 font-[family-name:var(--font-pixelify)] lg:max-w-6xl xl:max-w-7xl">
             {children}
           </div>
         </ThemeProvider>

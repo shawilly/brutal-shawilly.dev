@@ -5,7 +5,7 @@ import Testimonials from '@/components/sections/testimonials'
 export default function Work() {
   return (
     <div className="flex w-full flex-col items-center justify-center px-4">
-      <div className="w-full max-w-4xl">
+      <div className="w-full max-w-4xl lg:max-w-5xl xl:max-w-6xl">
         <Experience />
         <Projects />
         <Testimonials />

@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <div className="max-w-screen flex max-h-screen flex-col items-center justify-center px-4">
+    <div className="flex min-h-[70vh] flex-col items-center justify-center px-4">
       <Link
         href="/contact"
         className="mb-6 inline-flex cursor-pointer items-center gap-2 rounded-base border-2 border-border bg-white px-4 py-2 text-sm shadow-light transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none dark:border-darkBorder dark:bg-secondaryBlack dark:shadow-dark dark:hover:shadow-none"

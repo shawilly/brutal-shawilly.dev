@@ -6,7 +6,7 @@ import Link from 'next/link'
 export default function Contact() {
   return (
     <div className="flex w-full flex-col items-center justify-center px-4">
-      <div className="flex max-w-[750px] flex-col items-center justify-start">
+      <div className="flex w-full max-w-3xl flex-col items-center justify-start lg:max-w-4xl">
         <h1 className="neon-text py-8 font-[family-name:var(--font-nabla)] text-4xl tracking-wider sm:text-[4rem]">
           Get in touch
         </h1>

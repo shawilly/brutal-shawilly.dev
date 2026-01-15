@@ -3,7 +3,7 @@ import Skills from '@/components/sections/skills'
 export default function About() {
   return (
     <div className="flex w-full flex-col items-center justify-center px-4">
-      <div className="flex max-w-[800px] flex-col items-center justify-start">
+      <div className="flex w-full max-w-3xl flex-col items-center justify-start lg:max-w-4xl">
         <div className="mb-10 font-[family-name:var(--font-darker-grotesque)] text-base font-semibold tracking-wide sm:text-xl">
           <h1 className="shimmer-text mb-8 font-[family-name:var(--font-press-start)] text-2xl font-heading tracking-widest sm:text-4xl">
             About Me
