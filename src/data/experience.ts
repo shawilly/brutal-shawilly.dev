@@ -71,7 +71,7 @@ const PAST_ROLES: {
       'Created react-simple-devicons - React library for SVG developer icons',
       'Developed ponokai - Vim/Neovim color scheme with 10+ stars on GitHub',
       'Built full-stack portfolio template with Three.js, React-Redux, and TypeScript',
-      'Supported 10+ small businesses with cost-effective web solutions',
+      'Supported small businesses with cost-effective web solutions',
     ],
   },
 ]
