@@ -57,7 +57,7 @@ export default function ContactLinks() {
               key={`btn-${link.name}`}
               className={`w-full cursor-pointer rounded-base border-2 border-border px-6 py-3 text-center font-base shadow-light transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none dark:border-darkBorder dark:text-darkText dark:shadow-dark dark:hover:shadow-none ${
                 link.primary
-                  ? 'bg-main dark:bg-main'
+                  ? 'bg-main text-white dark:bg-main'
                   : 'bg-white dark:bg-secondaryBlack'
               }`}
             >

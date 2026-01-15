@@ -1,13 +1,25 @@
 import Links from '@/components/links'
+import Link from 'next/link'
 
 export default function Home() {
   return (
     <div className="max-w-screen flex max-h-screen flex-col items-center justify-center px-4">
-      <h1 className="py-8 font-[family-name:var(--font-nabla)] text-4xl tracking-wider invert dark:invert-0 sm:text-[4rem]">
+      <Link
+        href="/contact"
+        className="mb-6 inline-flex cursor-pointer items-center gap-2 rounded-base border-2 border-border bg-white px-4 py-2 text-sm shadow-light transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none dark:border-darkBorder dark:bg-secondaryBlack dark:shadow-dark dark:hover:shadow-none"
+      >
+        <span className="relative flex h-3 w-3">
+          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
+          <span className="relative inline-flex h-3 w-3 rounded-full bg-green-500"></span>
+        </span>
+        <span className="font-semibold">Open to new opportunities</span>
+      </Link>
+
+      <h1 className="neon-text py-8 font-[family-name:var(--font-nabla)] text-4xl tracking-wider sm:text-[4rem]">
         Shane Williams
       </h1>
 
-      <p className="mt-4 text-lg font-semibold underline underline-offset-8 sm:text-xl">
+      <p className="shimmer-text mt-4 text-lg font-semibold underline underline-offset-8 sm:text-xl">
         Full Stack Software Engineer
       </p>
 
@@ -16,8 +28,8 @@ export default function Home() {
           Building scalable systems from IoT platforms to web applications
         </p>
         <p className="mt-2">
-          4+ years delivering production systems with TypeScript, Go, React &
-          Node.js
+          over 5 years delivering production systems with TypeScript, Go, React
+          & Node.js
         </p>
         <p className="mt-4 text-sm opacity-80">Based in Ireland / Remote</p>
       </div>

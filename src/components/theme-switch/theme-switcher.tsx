@@ -17,7 +17,12 @@ export function ThemeSwitcher() {
   }, [])
 
   if (!mounted) {
-    return null // or a placeholder
+    // Return placeholder with same dimensions to prevent layout shift
+    return (
+      <Button className="rounded-base border-2 border-border bg-secondaryBlack px-4 py-2 text-center text-sm font-base shadow-light dark:border-darkBorder dark:bg-sky-400 dark:shadow-dark sm:text-base">
+        <div className="m500:h-8 m500:w-8 h-8 w-8 sm:h-12 sm:w-12" />
+      </Button>
+    )
   }
 
   return (

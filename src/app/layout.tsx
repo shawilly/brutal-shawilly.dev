@@ -34,8 +34,9 @@ const nabla = Nabla({
 })
 
 export const metadata: Metadata = {
-  title: 'Shawilly',
-  description: 'Software Engineer',
+  title: 'Shane Williams | Software Engineer',
+  description:
+    'Full-stack software engineer specializing in TypeScript, Go, React, and Node.js. Building scalable systems from IoT platforms to web applications.',
 }
 
 export default function RootLayout({
@@ -44,13 +45,13 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${pixelifySans.variable} ${darkerGrotesque.variable} ${pressStart.variable} ${nabla.variable} antialiased`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Nav />
-          <div className="mx-auto w-[750px] max-w-full bg-[linear-gradient(to_right,#80808033_1px,transparent_1px),linear-gradient(to_bottom,#80808033_1px,transparent_1px)] bg-[size:70px_70px] px-5 pb-10 pt-28 font-[family-name:var(--font-pixelify)]">
+          <div className="mx-auto w-[900px] max-w-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px] px-5 pb-16 pt-28 font-[family-name:var(--font-pixelify)]">
             {children}
           </div>
         </ThemeProvider>

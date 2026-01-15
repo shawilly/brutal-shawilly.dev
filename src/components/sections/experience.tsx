@@ -11,7 +11,7 @@ const skills = SKILLS.flat()
 export default function Experience() {
   return (
     <div className="mx-auto mb-16 w-full rounded-base border-2 border-border bg-white px-4 py-4 text-sm font-base shadow-light transition-all dark:border-darkBorder dark:bg-secondaryBlack dark:text-darkText dark:shadow-dark sm:px-6 sm:text-base md:text-lg">
-      <h2 className="mb-4 font-[family-name:var(--font-press-start)] text-xl font-heading underline-offset-8 dark:text-green-400 sm:text-2xl">
+      <h2 className="shimmer-text mb-4 font-[family-name:var(--font-press-start)] text-xl font-heading underline-offset-8 sm:text-2xl">
         Experience
       </h2>
 

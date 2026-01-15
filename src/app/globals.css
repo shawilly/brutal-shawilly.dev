@@ -9,12 +9,17 @@
 }
 
 body {
-  @apply dark:bg-darkBg bg-bg;
+  @apply bg-bg dark:bg-darkBg;
 }
 
 body {
-  --sb-track-color: #ffffff;
-  --sb-thumb-color: #000000;
+  --sb-track-color: #fafafa;
+  --sb-thumb-color: #0a0a0a;
+}
+
+.dark body {
+  --sb-track-color: #0a0a0a;
+  --sb-thumb-color: #fafafa;
 }
 
 body::-webkit-scrollbar {
@@ -35,6 +40,119 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+@layer base {
+}
 
+@keyframes neon-pulse {
+  0%,
+  100% {
+    text-shadow:
+      0 0 2px #fff,
+      0 0 8px #c1121f,
+      0 0 20px #c1121f,
+      0 0 30px #c1121f;
+    opacity: 1;
+  }
+  50% {
+    text-shadow:
+      0 0 1px #fff,
+      0 0 4px #c1121f,
+      0 0 10px #c1121f,
+      0 0 15px #c1121f;
+    opacity: 0.95;
+  }
+}
 
-@layer base {}
+.neon-text {
+  color: #fff;
+  text-shadow:
+    0 0 2px #fff,
+    0 0 8px #c1121f,
+    0 0 20px #c1121f,
+    0 0 30px #c1121f;
+  animation: neon-pulse 2.5s ease-in-out infinite;
+}
+
+.dark .neon-text {
+  text-shadow:
+    0 0 2px #fff,
+    0 0 8px #ef4444,
+    0 0 20px #ef4444,
+    0 0 30px #ef4444;
+}
+
+/* Reduced effect on mobile for performance */
+@media (max-width: 640px) {
+  .neon-text {
+    text-shadow:
+      0 0 2px #fff,
+      0 0 6px #c1121f,
+      0 0 12px #c1121f;
+  }
+
+  .dark .neon-text {
+    text-shadow:
+      0 0 2px #fff,
+      0 0 6px #ef4444,
+      0 0 12px #ef4444;
+  }
+
+  @keyframes neon-pulse {
+    0%,
+    100% {
+      text-shadow:
+        0 0 2px #fff,
+        0 0 6px #c1121f,
+        0 0 12px #c1121f;
+      opacity: 1;
+    }
+    50% {
+      text-shadow:
+        0 0 1px #fff,
+        0 0 3px #c1121f,
+        0 0 6px #c1121f;
+      opacity: 0.95;
+    }
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  50%,
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.shimmer-text {
+  background: linear-gradient(
+    90deg,
+    currentColor 0%,
+    currentColor 40%,
+    #c1121f 50%,
+    currentColor 60%,
+    currentColor 100%
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 5s ease-in-out infinite;
+}
+
+.dark .shimmer-text {
+  background: linear-gradient(
+    90deg,
+    currentColor 0%,
+    currentColor 40%,
+    #ef4444 50%,
+    currentColor 60%,
+    currentColor 100%
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

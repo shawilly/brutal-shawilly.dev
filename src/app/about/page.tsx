@@ -5,12 +5,12 @@ export default function About() {
     <div className="flex w-full flex-col items-center justify-center px-4">
       <div className="flex max-w-[800px] flex-col items-center justify-start">
         <div className="mb-10 font-[family-name:var(--font-darker-grotesque)] text-base font-semibold tracking-wide sm:text-xl">
-          <h1 className="mb-8 font-[family-name:var(--font-press-start)] text-2xl font-heading tracking-widest sm:text-4xl">
+          <h1 className="shimmer-text mb-8 font-[family-name:var(--font-press-start)] text-2xl font-heading tracking-widest sm:text-4xl">
             About Me
           </h1>
           <p className="leading-relaxed">
             I&apos;m <span className="font-bold">Shane Williams</span>, a
-            full-stack software engineer with 4+ years of experience building
+            full-stack software engineer with over 5 years of experience building
             production systems. I specialize in{' '}
             <span className="text-mainAccent dark:text-main">
               TypeScript, Go, React, and Node.js

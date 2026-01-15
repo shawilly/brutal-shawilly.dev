@@ -51,7 +51,7 @@ export default function Nav() {
         <nav
           ref={ref}
           className={clsx(
-            'absolute left-5 top-14 w-[90%] flex-col gap-3 rounded-lg border-2 border-border bg-main p-3 text-sm font-base text-text shadow-light dark:border-darkBorder dark:shadow-dark sm:static sm:flex sm:w-max sm:flex-row sm:gap-5 sm:p-2.5 sm:px-5 sm:text-base w450:gap-4',
+            'absolute left-5 top-14 w-[90%] flex-col gap-3 rounded-base border-2 border-border bg-bg p-3 text-sm font-base text-text shadow-light dark:border-darkBorder dark:bg-secondaryBlack dark:shadow-dark sm:static sm:flex sm:w-max sm:flex-row sm:gap-4 sm:p-2.5 sm:px-5 sm:text-base w450:gap-4',
             isOpen ? 'flex' : 'hidden sm:flex',
           )}
         >
@@ -60,9 +60,9 @@ export default function Nav() {
               <Button
                 key={`btn-${link.path}`}
                 className={clsx(
-                  'cursor-pointer rounded-base border-2 border-border bg-white px-4 py-2 text-center text-sm font-base shadow-light transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none dark:border-darkBorder dark:bg-secondaryBlack dark:text-darkText dark:shadow-dark dark:hover:shadow-none sm:text-base',
+                  'cursor-pointer rounded-base border-2 border-border bg-white px-4 py-2 text-center text-sm font-base shadow-light transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none dark:border-darkBorder dark:bg-darkBg dark:text-darkText dark:shadow-dark dark:hover:shadow-none sm:text-base',
                   path === link.path
-                    ? 'bg-[#90ed91] dark:bg-white dark:text-text'
+                    ? 'bg-main text-white dark:bg-main dark:text-white'
                     : 'font-base',
                 )}
                 onClick={() => {

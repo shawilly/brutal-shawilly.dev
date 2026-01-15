@@ -10,33 +10,33 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        main: '#c5a1ff',
-        mainAccent: '#9723c9', // not needed for shadcn components
+        main: '#c1121f', // indigo accent
+        mainAccent: '#780000', // darker indigo for hover states
         overlay: 'rgba(0,0,0,0.8)',
 
-        // light mode
-        bg: '#fff2ab',
-        text: '#010200',
-        border: '#010200',
+        // light mode - clean white
+        bg: '#fafafa',
+        text: '#0a0a0a',
+        border: '#0a0a0a',
 
-        // dark mode
-        darkBg: '#272933',
-        darkText: '#eeefe9',
-        darkBorder: '#000',
-        secondaryBlack: '#212121', // opposite of plain white, not used pitch black because borders and box-shadows are that color
+        // dark mode - deep black
+        darkBg: '#0a0a0a',
+        darkText: '#fafafa',
+        darkBorder: '#fafafa',
+        secondaryBlack: '#141414',
       },
       borderRadius: {
-        base: '5px',
+        base: '3px',
       },
       boxShadow: {
-        light: '4px 4px 0px 0px #000',
-        dark: '4px 4px 0px 0px #000',
+        light: '2px 2px 0px 0px #0a0a0a',
+        dark: '2px 2px 0px 0px #fafafa',
       },
       translate: {
-        boxShadowX: '4px',
-        boxShadowY: '4px',
-        reverseBoxShadowX: '-4px',
-        reverseBoxShadowY: '-4px',
+        boxShadowX: '2px',
+        boxShadowY: '2px',
+        reverseBoxShadowX: '-2px',
+        reverseBoxShadowY: '-2px',
       },
       fontWeight: {
         base: '500',
