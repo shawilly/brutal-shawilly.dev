@@ -6,6 +6,8 @@ import {
   SiExpress,
   SiFastify,
   SiFishshell,
+  SiGit,
+  SiGithub,
   SiGo,
   SiGooglecloud,
   SiGrafana,
@@ -27,6 +29,7 @@ import {
   SiRedis,
   SiSass,
   SiTailwindcss,
+  SiTurborepo,
   SiTypescript,
   SiWezterm,
   type IconType,
@@ -134,12 +137,6 @@ const SKILLS: {
         description: 'High-performance web server and reverse proxy.',
       },
       {
-        skill: 'docker',
-        icon: SiDocker,
-        description:
-          'Platform for developing, shipping, and running containers.',
-      },
-      {
         skill: 'aws',
         icon: SiAmazon,
         description: 'Cloud computing platform for scalable applications.',
@@ -172,33 +169,33 @@ const SKILLS: {
     ],
   },
   {
-    field: 'Setup',
+    field: 'DevOps & Tools',
     skills: [
+      {
+        skill: 'docker',
+        icon: SiDocker,
+        description:
+          'Platform for developing, shipping, and running containers.',
+      },
+      {
+        skill: 'turborepo',
+        icon: SiTurborepo,
+        description: 'High-performance monorepo build system.',
+      },
+      {
+        skill: 'git',
+        icon: SiGit,
+        description: 'Distributed version control system.',
+      },
+      {
+        skill: 'github',
+        icon: SiGithub,
+        description: 'Platform for hosting and collaborating on code.',
+      },
       {
         skill: 'neovim',
         icon: SiNeovim,
         description: 'Extensible and modernized version of Vim.',
-      },
-      {
-        skill: 'wezterm',
-        icon: SiWezterm,
-        description: 'GPU-accelerated terminal emulator.',
-      },
-      {
-        skill: 'fish',
-        icon: SiFishshell,
-        description: 'User-friendly and powerful command-line shell.',
-      },
-      {
-        skill: 'lua',
-        icon: SiLua,
-        description:
-          'Lightweight scripting language used in Neovim and game development.',
-      },
-      {
-        skill: 'macos',
-        icon: SiMacos,
-        description: 'Operating system for Apple computers.',
       },
       {
         skill: 'linux',

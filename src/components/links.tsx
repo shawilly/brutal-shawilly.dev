@@ -1,49 +1,58 @@
-import { IconType, SiGithub, SiGmail } from '@icons-pack/react-simple-icons'
+import { IconType, SiGithub } from '@icons-pack/react-simple-icons'
+import { Linkedin, Mail } from 'lucide-react'
 import Link from 'next/link'
 import { Button } from './ui/button'
-import { Contact } from 'lucide-react'
 
 export default function Links() {
-  const links: { icon?: IconType; name: string; href: string }[] = [
+  const links: {
+    icon?: IconType
+    name: string
+    href: string
+    primary?: boolean
+  }[] = [
     {
-      name: 'contact',
-      icon: Contact,
+      name: 'Get in Touch',
+      icon: Mail,
       href: '/contact',
+      primary: true,
     },
     {
-      name: 'github',
+      name: 'GitHub',
       icon: SiGithub,
       href: 'https://github.com/shawilly',
     },
     {
-      name: 'linkedin',
+      name: 'LinkedIn',
+      icon: Linkedin,
       href: 'https://www.linkedin.com/in/shanebarrywilliams/',
     },
   ]
 
   return (
-    <div className="mx-auto mt-20 flex w-full flex-col flex-wrap items-center justify-start gap-8 sm:flex-row sm:justify-center ">
+    <div className="mx-auto mt-16 flex w-full flex-col flex-wrap items-center justify-start gap-4 sm:flex-row sm:justify-center">
       {links.map((link, id) => {
         return (
-          <Button
-            key={`btn-${link.name}`}
-            className="cursor-pointer rounded-base border-2 border-border bg-white px-4 py-2 text-center text-sm font-base shadow-light transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none dark:border-darkBorder dark:bg-secondaryBlack dark:text-darkText dark:shadow-dark dark:hover:shadow-none sm:text-base"
+          <Link
+            target={link.name === 'Get in Touch' ? '_self' : '_blank'}
+            key={id}
+            href={link.href}
           >
-            <Link
-              target={link.name === 'contact' ? '_self' : '_blank'}
-              key={id}
-              href={link.href}
-              className="flex flex-row items-center justify-center gap-4"
+            <Button
+              key={`btn-${link.name}`}
+              className={`cursor-pointer rounded-base border-2 border-border px-6 py-3 text-center font-base shadow-light transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none dark:border-darkBorder dark:text-darkText dark:shadow-dark dark:hover:shadow-none ${
+                link.primary
+                  ? 'bg-main text-text dark:bg-main'
+                  : 'bg-white dark:bg-secondaryBlack'
+              }`}
             >
-              {link.name}
-              {link.icon ? (
-                <link.icon
-                  title={link.name}
-                  className="h-12 w-12 dark:text-2xl"
-                />
-              ) : null}
-            </Link>
-          </Button>
+              <div className="flex flex-row items-center justify-center gap-3">
+                {link.icon ? <link.icon className="h-5 w-5" /> : null}
+                <span className="text-sm font-semibold sm:text-base">
+                  {link.name}
+                </span>
+              </div>
+            </Button>
+          </Link>
         )
       })}
     </div>

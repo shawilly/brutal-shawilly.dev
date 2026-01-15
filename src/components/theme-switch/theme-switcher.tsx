@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react'
 
 import { Button } from '../ui/button'
 import { RandomClouds } from './clouds'
-import StarField from './star-field'
+import { StarField } from './star-field'
 
 export function ThemeSwitcher() {
   const { setTheme, theme } = useTheme()

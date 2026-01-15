@@ -2,31 +2,41 @@ import Skills from '@/components/sections/skills'
 
 export default function About() {
   return (
-    <div className="flex w-full flex-col items-center justify-center">
-      <div className="flex max-w-[750px] flex-col items-center justify-start">
+    <div className="flex w-full flex-col items-center justify-center px-4">
+      <div className="flex max-w-[800px] flex-col items-center justify-start">
         <div className="mb-10 font-[family-name:var(--font-darker-grotesque)] text-base font-semibold tracking-wide sm:text-xl">
           <h1 className="mb-8 font-[family-name:var(--font-press-start)] text-2xl font-heading tracking-widest sm:text-4xl">
-            Whoami
+            About Me
           </h1>
-          <p>
-            Hi, my name is{' '}
-            <span className="font-bold italic">Shane Williams</span>. I am an
-            experienced software engineer well versed in creating scalable
-            solutions for you and and your business needs.
-            <br />
-            <br />I am a terminal fanatic that loves coding, solving problems,
-            and making life easier for people. I’m all about smart, scalable
-            solutions and always leveling up through learning. To me, teamwork
-            and communication matter just as much as the code itself.
+          <p className="leading-relaxed">
+            I&apos;m <span className="font-bold">Shane Williams</span>, a
+            full-stack software engineer with 4+ years of experience building
+            production systems. I specialize in{' '}
+            <span className="text-mainAccent dark:text-main">
+              TypeScript, Go, React, and Node.js
+            </span>
+            , with a focus on scalable architectures and clean code.
+          </p>
+          <p className="mt-4 leading-relaxed">
+            Currently at ResourceKraft, I&apos;m architecting IoT energy
+            management platforms that process real-time data from thousands of
+            devices. Previously at BioRender, I helped scale internal tooling
+            for a platform used by millions of scientists worldwide.
+          </p>
+          <p className="mt-4 leading-relaxed">
+            I care deeply about developer experience, maintainable code, and
+            building systems that actually work. When I&apos;m not coding,
+            you&apos;ll find me contributing to open source, tweaking my Neovim
+            config, or working on side projects.
           </p>
         </div>
 
         <Skills />
-        <div>
-          <p>
-            I spend my non-tech time chess ♟️, writing music 🎸, Olympic
-            weightlifting 🏋️, and, of course, being terrorized/terrorizing my
-            partner &amp; children; they are my world 🌎
+
+        <div className="mt-8 rounded-base border-2 border-border bg-white p-4 text-center shadow-light dark:border-darkBorder dark:bg-secondaryBlack dark:shadow-dark">
+          <p className="font-[family-name:var(--font-darker-grotesque)] text-sm sm:text-base">
+            Outside of tech: chess, writing music, Olympic weightlifting, and
+            family time.
           </p>
         </div>
       </div>

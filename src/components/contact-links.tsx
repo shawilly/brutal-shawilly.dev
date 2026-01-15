@@ -1,4 +1,4 @@
-import { IconType, SiGmail } from '@icons-pack/react-simple-icons'
+import { IconType, SiGithub, SiGmail } from '@icons-pack/react-simple-icons'
 import { Linkedin, PhoneCall } from 'lucide-react'
 import Link from 'next/link'
 import { Button } from './ui/button'
@@ -7,51 +7,72 @@ export default function ContactLinks() {
   const links: {
     icon: IconType
     name: string
+    label: string
     href: string
     color: string
+    primary?: boolean
   }[] = [
     {
       name: 'email',
+      label: 'shane@shawilly.dev',
       icon: SiGmail,
       color: 'default',
       href: 'mailto:shane@shawilly.dev',
-    },
-    {
-      name: 'phone',
-      icon: PhoneCall,
-      color: '#2BEDA7',
-      href: 'tel:+353833626936',
+      primary: true,
     },
     {
       name: 'linkedin',
+      label: 'LinkedIn Profile',
       icon: Linkedin,
       color: '#0D597F',
       href: 'https://www.linkedin.com/in/shanebarrywilliams/',
     },
+    {
+      name: 'github',
+      label: 'GitHub Profile',
+      icon: SiGithub,
+      color: 'default',
+      href: 'https://github.com/shawilly',
+    },
+    {
+      name: 'phone',
+      label: '+353 83 362 6936',
+      icon: PhoneCall,
+      color: '#2BEDA7',
+      href: 'tel:+353833626936',
+    },
   ]
 
   return (
-    <div className="mr-auto mt-8 flex w-full flex-col items-center gap-8">
+    <div className="flex w-full flex-col items-center gap-4">
       {links.map((link, id) => {
         return (
-          <Button
-            key={`btn-${link.name}`}
-            className="w-full cursor-pointer rounded-base border-2 border-border bg-white px-4 py-2 text-center font-base shadow-light transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none dark:border-darkBorder dark:bg-secondaryBlack dark:text-darkText dark:shadow-dark dark:hover:shadow-none sm:text-base"
+          <Link
+            target={link.name === 'email' ? '_self' : '_blank'}
+            key={id}
+            href={link.href}
+            className="w-full max-w-md"
           >
-            <Link
-              target="_blank"
-              key={id}
-              href={link.href}
-              className="flex flex-row items-center justify-center gap-4 text-2xl"
+            <Button
+              key={`btn-${link.name}`}
+              className={`w-full cursor-pointer rounded-base border-2 border-border px-6 py-3 text-center font-base shadow-light transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none dark:border-darkBorder dark:text-darkText dark:shadow-dark dark:hover:shadow-none ${
+                link.primary
+                  ? 'bg-main dark:bg-main'
+                  : 'bg-white dark:bg-secondaryBlack'
+              }`}
             >
-              <link.icon
-                title={link.name}
-                className="h-12 w-12 dark:text-2xl"
-                color={link.color}
-              />
-              {link.name}
-            </Link>
-          </Button>
+              <div className="flex w-full flex-row items-center justify-between gap-4">
+                <link.icon
+                  title={link.name}
+                  className="h-6 w-6 flex-shrink-0"
+                  color={link.color}
+                />
+                <span className="flex-grow text-left text-sm sm:text-base">
+                  {link.label}
+                </span>
+              </div>
+            </Button>
+          </Link>
         )
       })}
     </div>

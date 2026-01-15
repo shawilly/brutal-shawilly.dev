@@ -1,6 +1,6 @@
 import React from 'react'
 
-const StarField = ({ density = 600, width = 500, height = 500 }) => {
+export const StarField = ({ density = 600, width = 500, height = 500 }) => {
   const stars = Array.from({ length: density }, (_, i) => {
     const top = Math.random() * height
     const left = Math.random() * width
@@ -15,5 +15,3 @@ const StarField = ({ density = 600, width = 500, height = 500 }) => {
 
   return <>{stars}</>
 }
-
-export default StarField

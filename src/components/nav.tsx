@@ -56,26 +56,26 @@ export default function Nav() {
           )}
         >
           {links.map((link) => (
-            <Button
-              key={`btn-${link.path}`}
-              className={clsx(
-                'cursor-pointer rounded-base border-2 border-border bg-white px-4 py-2 text-center text-sm font-base shadow-light transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none dark:border-darkBorder dark:bg-secondaryBlack dark:text-darkText dark:shadow-dark dark:hover:shadow-none sm:text-base',
-                path === link.path
-                  ? 'bg-[#90ed91] dark:bg-white dark:text-text'
-                  : 'font-base',
-              )}
-              onClick={() => {
-                setIsOpen(!isOpen) // Toggle the open/close state
-                // Optionally, navigate to the link if you want this to be part of the button's behavior
-                if (isOpen) {
-                  router.push(link.path) // For navigation, you can use Next.js `router.push` here
-                }
-              }}
-            >
-              <Link key={link.path} href={link.path}>
+            <Link key={link.path} href={link.path}>
+              <Button
+                key={`btn-${link.path}`}
+                className={clsx(
+                  'cursor-pointer rounded-base border-2 border-border bg-white px-4 py-2 text-center text-sm font-base shadow-light transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none dark:border-darkBorder dark:bg-secondaryBlack dark:text-darkText dark:shadow-dark dark:hover:shadow-none sm:text-base',
+                  path === link.path
+                    ? 'bg-[#90ed91] dark:bg-white dark:text-text'
+                    : 'font-base',
+                )}
+                onClick={() => {
+                  setIsOpen(!isOpen) // Toggle the open/close state
+                  // Optionally, navigate to the link if you want this to be part of the button's behavior
+                  if (isOpen) {
+                    router.push(link.path) // For navigation, you can use Next.js `router.push` here
+                  }
+                }}
+              >
                 {link.text}
-              </Link>
-            </Button>
+              </Button>
+            </Link>
           ))}
           <ThemeSwitcher />
         </nav>

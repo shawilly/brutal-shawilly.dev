@@ -5,45 +5,73 @@ const PAST_ROLES: {
   startDate: string
   endDate: string
   accomplishments: string[]
+  technologies?: string[]
 }[] = [
   {
     company: 'ResourceKraft & Full Stack Energy',
     role: 'Software Engineer',
     description:
-      'Developed and deployed energy management solutions, leading development of a geothermal system monitoring application, leveraging MQTT and IoT devices for real-time complex data tracking via dashboard.',
+      'Architecting and developing enterprise IoT energy management platforms. Building real-time monitoring systems for geothermal and EV charging infrastructure using TypeScript, Go, and modern cloud technologies.',
     startDate: 'April 2024',
-    endDate: 'Now',
+    endDate: 'Present',
+    technologies: [
+      'TypeScript',
+      'Go',
+      'React',
+      'Next.js',
+      'Fastify',
+      'PostgreSQL',
+      'InfluxDB',
+      'MQTT',
+      'Docker',
+      'Keycloak',
+      'Grafana',
+    ],
     accomplishments: [
-      'Led development of a geothermal system monitoring application, leveraging MQTT and IoT devices for real-time complex data tracking',
+      'Architected full-stack IoT monitoring platform with real-time data visualization using Grafana and InfluxDB',
+      'Built Go microservices for high-throughput alert processing and MQTT message handling',
+      'Developed TypeScript/Fastify API with complex PostgreSQL queries for time-series energy data',
+      'Implemented enterprise auth with Keycloak SSO across multiple applications',
       'Optimized EV smart charging algorithms, reducing energy waste by 15%',
-      'Integrated cross-platform energy solutions for global clients, improving hardware efficiency',
-      'Led key development initiatives in energy monitoring, enhancing real-time data accuracy by 20%',
+      'Set up Turborepo monorepo with shared packages for consistent code across apps',
     ],
   },
   {
     company: 'BioRender',
     role: 'Software Engineer',
     description:
-      'Built and maintained internal tools, automated key business processes with microservices, and managed essential tooling to improve team efficiency and product scalability.',
+      'Full-stack development for a leading scientific illustration platform. Built internal tools and microservices to support rapid growth from startup to enterprise scale.',
     startDate: 'January 2021',
     endDate: 'June 2024',
+    technologies: [
+      'TypeScript',
+      'React',
+      'Node.js',
+      'GCP',
+      'MongoDB',
+      'Redis',
+      'Express',
+    ],
     accomplishments: [
       'Developed 40+ internal tools and features, streamlining operations across multiple teams',
       'Automated core business processes, reducing manual workload by 30%',
       'Implemented microservices using GCP and RESTful APIs, enhancing system scalability',
+      'Collaborated with cross-functional teams to ship features used by 25M+ scientists',
     ],
   },
   {
-    company: 'Freelance',
+    company: 'Open Source & Freelance',
     role: 'Software Engineer',
     description:
-      'Contributed to open-source projects and provided pro-bono software development for small businesses, focusing on accessibility and technical support.',
+      'Contributing to open-source projects and building solutions for small businesses. Creating developer tools and maintaining personal projects.',
     startDate: 'January 2021',
-    endDate: 'Now',
+    endDate: 'Present',
+    technologies: ['TypeScript', 'React', 'Vim Script', 'Lua', 'Node.js'],
     accomplishments: [
-      'Supported 10+ small businesses by building cost-effective digital solutions',
-      'Contributed to multiple open-source projects, improving accessibility and usability',
-      'Developed and maintained various web applications, enhancing online presence for clients',
+      'Created react-simple-devicons - React library for SVG developer icons',
+      'Developed ponokai - Vim/Neovim color scheme with 10+ stars on GitHub',
+      'Built full-stack portfolio template with Three.js, React-Redux, and TypeScript',
+      'Supported 10+ small businesses with cost-effective web solutions',
     ],
   },
 ]
