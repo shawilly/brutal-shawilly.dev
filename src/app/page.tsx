@@ -20,7 +20,7 @@ export default function Home() {
       </h1>
 
       <p className="shimmer-text mt-4 text-lg font-semibold underline underline-offset-8 sm:text-xl">
-        Full Stack Software Engineer
+        Senior Full Stack Software Engineer
       </p>
 
       <div className="mt-8 max-w-xl text-center font-[family-name:var(--font-darker-grotesque)] text-base font-semibold tracking-wide sm:text-xl">
@@ -28,8 +28,7 @@ export default function Home() {
           Building scalable systems from IoT platforms to web applications
         </p>
         <p className="mt-2">
-          over 5 years delivering production systems with TypeScript, Go, React
-          & Node.js
+          5+ years delivering enterprise production systems
         </p>
         <p className="mt-4 text-sm opacity-80">Based in Ireland / Remote</p>
       </div>

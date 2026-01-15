@@ -9,7 +9,7 @@ const PAST_ROLES: {
 }[] = [
   {
     company: 'ResourceKraft & Full Stack Energy',
-    role: 'Software Engineer',
+    role: 'Senior Full-Stack Software Engineer',
     description:
       'Architecting and developing enterprise IoT energy management platforms. Building real-time monitoring systems for geothermal and EV charging infrastructure using TypeScript, Go, and modern cloud technologies.',
     startDate: 'April 2024',

@@ -34,7 +34,7 @@ const nabla = Nabla({
 })
 
 export const metadata: Metadata = {
-  title: 'Shane Williams | Software Engineer',
+  title: 'Shane Williams | Senior Software Engineer',
   description:
     'Full-stack software engineer specializing in TypeScript, Go, React, and Node.js. Building scalable systems from IoT platforms to web applications.',
 }
