@@ -9,8 +9,8 @@ export default function About() {
             About Me
           </h1>
           <p className="leading-relaxed">
-            I&apos;m <span className="font-bold">Shane Williams</span>, a
-            full-stack software engineer with over 5 years of experience building
+            I&apos;m <span className="font-bold">Shane Williams</span>, a senior
+            full-stack software engineer with over 5 years experience building
             production systems. I specialize in{' '}
             <span className="text-mainAccent dark:text-main">
               TypeScript, Go, React, and Node.js

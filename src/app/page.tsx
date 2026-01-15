@@ -25,7 +25,7 @@ export default function Home() {
 
       <div className="mt-8 max-w-xl text-center font-[family-name:var(--font-darker-grotesque)] text-base font-semibold tracking-wide sm:text-xl">
         <p className="text-mainAccent dark:text-main">
-          Building scalable systems from IoT platforms to web applications
+          Building scalable systems from IoT platforms and web/mobile apps
         </p>
         <p className="mt-2">
           5+ years delivering enterprise production systems
