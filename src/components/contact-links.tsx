@@ -34,13 +34,6 @@ export default function ContactLinks() {
       color: 'default',
       href: 'https://github.com/shawilly',
     },
-    {
-      name: 'phone',
-      label: '+353 83 362 6936',
-      icon: PhoneCall,
-      color: '#2BEDA7',
-      href: 'tel:+353833626936',
-    },
   ]
 
   return (

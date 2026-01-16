@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Helvetica-Bold',
     color: colors.primary,
     letterSpacing: 1,
-    marginBottom: 4,
+    marginBottom: 20,
   },
   title: {
     fontSize: 14,
@@ -50,17 +50,26 @@ const styles = StyleSheet.create({
   contactRow: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    gap: 15,
+    alignItems: 'center',
     fontSize: 9,
     color: colors.secondary,
+    marginTop: 4,
   },
   contactItem: {
     flexDirection: 'row',
     alignItems: 'center',
   },
+  contactSeparator: {
+    marginHorizontal: 8,
+    color: colors.light,
+  },
   contactLink: {
-    color: colors.secondary,
+    color: colors.accent,
     textDecoration: 'none',
+  },
+  contactLabel: {
+    color: colors.light,
+    marginRight: 4,
   },
   section: {
     marginBottom: 18,
@@ -214,33 +223,27 @@ export function ResumePDF() {
           <Text style={styles.name}>SHANE WILLIAMS</Text>
           <Text style={styles.title}>Senior Full-Stack Software Engineer</Text>
           <View style={styles.contactRow}>
-            <View style={styles.contactItem}>
-              <Text>Ireland (Remote Worldwide)</Text>
-            </View>
-            <View style={styles.contactItem}>
-              <Link src="mailto:shane@shawilly.dev" style={styles.contactLink}>
-                shane@shawilly.dev
-              </Link>
-            </View>
-            <View style={styles.contactItem}>
-              <Text>+353 83 362 6936</Text>
-            </View>
-            <View style={styles.contactItem}>
-              <Link
-                src="https://linkedin.com/in/shanebarrywilliams"
-                style={styles.contactLink}
-              >
-                linkedin.com/in/shanebarrywilliams
-              </Link>
-            </View>
-            <View style={styles.contactItem}>
-              <Link
-                src="https://github.com/shawilly"
-                style={styles.contactLink}
-              >
-                github.com/shawilly
-              </Link>
-            </View>
+            <Text>Ireland (Remote Worldwide)</Text>
+            <Text style={styles.contactSeparator}>•</Text>
+            <Link src="mailto:shane@shawilly.dev" style={styles.contactLink}>
+              shane@shawilly.dev
+            </Link>
+            <Text style={styles.contactSeparator}>•</Text>
+            <Text>+353 83 362 6936</Text>
+            <Text style={styles.contactSeparator}>•</Text>
+            <Link
+              src="https://linkedin.com/in/shanebarrywilliams"
+              style={styles.contactLink}
+            >
+              LinkedIn
+            </Link>
+            <Text style={styles.contactSeparator}>•</Text>
+            <Link
+              src="https://github.com/shawilly"
+              style={styles.contactLink}
+            >
+              GitHub
+            </Link>
           </View>
         </View>
 
@@ -249,14 +252,14 @@ export function ResumePDF() {
           <Text style={styles.sectionTitle}>Professional Summary</Text>
           <Text style={styles.summaryText}>
             Senior Full-Stack Software Engineer with 5+ years of experience
-            architecting and delivering enterprise-grade production systems.
-            Expert in TypeScript, Go, React, and Node.js with a proven track
-            record of building scalable IoT platforms, internal tooling, and
-            microservices. Currently leading technical initiatives at
-            ResourceKraft, processing real-time data from thousands of IoT
-            devices. Previously contributed to BioRender&apos;s growth, building
-            tools that support 25M+ scientists globally. Passionate about
-            developer experience, clean architecture, and systems that scale.
+            architecting and delivering enterprise-grade production systems. I
+            bring a proven track record of building scalable IoT platforms,
+            internal tooling, and microservices. Currently leading technical
+            initiatives at ResourceKraft, processing real-time data from
+            thousands of IoT devices. Previously contributed to BioRender&apos;s
+            growth, building tools that support 4M+ scientists globally.
+            Passionate about developer experience, clean architecture, and
+            systems that scale.
           </Text>
         </View>
 

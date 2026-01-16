@@ -56,7 +56,7 @@ const PAST_ROLES: {
       'Developed 40+ internal tools and features, streamlining operations across multiple teams',
       'Automated core business processes, reducing manual workload by 30%',
       'Implemented microservices using GCP and RESTful APIs, enhancing system scalability',
-      'Collaborated with cross-functional teams to ship features used by 25M+ scientists',
+      'Collaborated with cross-functional teams to ship features used by 4M+ scientists',
     ],
   },
   {
