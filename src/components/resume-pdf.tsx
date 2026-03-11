@@ -238,10 +238,7 @@ export function ResumePDF() {
               LinkedIn
             </Link>
             <Text style={styles.contactSeparator}>•</Text>
-            <Link
-              src="https://github.com/shawilly"
-              style={styles.contactLink}
-            >
+            <Link src="https://github.com/shawilly" style={styles.contactLink}>
               GitHub
             </Link>
           </View>
@@ -343,7 +340,9 @@ export function ResumePDF() {
             </Text>
             <Text style={styles.accomplishment}>
               <Text style={styles.bullet}>• </Text>
-              <Text style={{ fontFamily: 'Helvetica-Bold' }}>shell-quest</Text>{' '}
+              <Text style={{ fontFamily: 'Helvetica-Bold' }}>
+                shell-quest
+              </Text>{' '}
               – Pirate-themed kids CLI learning game in Go (Bubble Tea TUI,
               SQLite, sandboxed shell, 17 real commands)
             </Text>
@@ -363,8 +362,7 @@ export function ResumePDF() {
               Atlantic Technological University
             </Text>
             <Text style={styles.educationDetails}>
-              BSc (Honours) Medical Biotechnology · Upper Second Class (2.1) ·
-              2019–2020
+              BSc (Honours) Medical Biotechnology
             </Text>
           </View>
           <View style={styles.educationItem}>
@@ -372,8 +370,15 @@ export function ResumePDF() {
               Algonquin College of Applied Arts and Technology
             </Text>
             <Text style={styles.educationDetails}>
-              Advanced Diploma, Biotechnology — Advanced (Co-op) · 3.1 GPA ·
-              Dean&apos;s List · 2015–2018
+              Advanced Diploma, Biotechnology
+            </Text>
+          </View>
+          <View style={styles.educationItem}>
+            <Text style={styles.educationTitle}>
+              Algonquin College of Applied Arts and Technology
+            </Text>
+            <Text style={styles.educationDetails}>
+              Advanced Diploma, Computer Science Engineering
             </Text>
           </View>
         </View>
