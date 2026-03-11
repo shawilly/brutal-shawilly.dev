@@ -7,13 +7,6 @@ const PROJECTS: {
   stars?: number
 }[] = [
   {
-    name: 'dev-portfolio',
-    description:
-      'Full-stack portfolio application with Vite, Node.js backend, Three.js 3D graphics, TypeScript, React-Redux, and React-Router.',
-    technologies: ['TypeScript', 'React', 'Three.js', 'Node.js', 'Vite'],
-    repoUrl: 'https://github.com/shawilly/dev-portfolio',
-  },
-  {
     name: 'ponokai',
     description:
       'A pastelly Monokai-esque color scheme for Vim and Neovim. Easy on the eyes with vibrant syntax highlighting.',
@@ -24,17 +17,34 @@ const PROJECTS: {
   {
     name: 'react-simple-devicons',
     description:
-      'React library providing SVG developer icons with customizable color, size, and styling options.',
+      'A straightforward React implementation providing access to SVG dev icons from devicon.dev, with customizable color, size, and styling.',
     technologies: ['TypeScript', 'React', 'SVG'],
     repoUrl: 'https://github.com/shawilly/react-simple-devicons',
     stars: 2,
   },
   {
-    name: 'zendesk-authorization-base64-encoder',
+    name: 'fallout.nvim',
     description:
-      'Utility to simplify basic authentication string encoding for Zendesk API integration in low-code/no-code platforms.',
-    technologies: ['TypeScript', 'Node.js'],
-    repoUrl: 'https://github.com/shawilly/zendesk-authorization-base64-encoder',
+      'A Fallout-inspired Neovim color scheme built in Lua.',
+    technologies: ['Lua', 'Neovim'],
+    repoUrl: 'https://github.com/shawilly/fallout.nvim',
+    stars: 3,
+  },
+  {
+    name: 'brutal-shawilly.dev',
+    description:
+      'This portfolio — a minimal neobrutal personal site built with Next.js, Tailwind, and React PDF.',
+    technologies: ['TypeScript', 'Next.js', 'Tailwind CSS'],
+    repoUrl: 'https://github.com/shawilly/brutal-shawilly.dev',
+    liveLink: 'https://shawilly.dev',
+    stars: 1,
+  },
+  {
+    name: 'shell-quest',
+    description:
+      'Pirate-themed CLI learning game for kids (ages 3–10) that teaches real shell commands through a sandboxed Bubble Tea TUI. Single Go binary with SQLite progress tracking and 17 real shell commands across 3 difficulty tiers.',
+    technologies: ['Go', 'Bubble Tea', 'SQLite', 'Lip Gloss'],
+    repoUrl: 'https://github.com/shawilly/shell-quest',
   },
 ]
 

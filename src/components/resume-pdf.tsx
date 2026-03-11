@@ -343,6 +343,12 @@ export function ResumePDF() {
             </Text>
             <Text style={styles.accomplishment}>
               <Text style={styles.bullet}>• </Text>
+              <Text style={{ fontFamily: 'Helvetica-Bold' }}>shell-quest</Text>{' '}
+              – Pirate-themed kids CLI learning game in Go (Bubble Tea TUI,
+              SQLite, sandboxed shell, 17 real commands)
+            </Text>
+            <Text style={styles.accomplishment}>
+              <Text style={styles.bullet}>• </Text>
               Supported small businesses with cost-effective full-stack web
               solutions
             </Text>
@@ -351,15 +357,23 @@ export function ResumePDF() {
 
         {/* Education */}
         <View style={styles.section}>
-          <Text style={styles.sectionTitle}>
-            Education & Continuous Learning
-          </Text>
+          <Text style={styles.sectionTitle}>Education</Text>
           <View style={styles.educationItem}>
+            <Text style={styles.educationTitle}>
+              Atlantic Technological University
+            </Text>
             <Text style={styles.educationDetails}>
-              Self-directed learning through building production systems,
-              open-source contributions, and staying current with modern
-              development practices. Strong foundation in software architecture,
-              system design, and full-stack development.
+              BSc (Honours) Medical Biotechnology · Upper Second Class (2.1) ·
+              2019–2020
+            </Text>
+          </View>
+          <View style={styles.educationItem}>
+            <Text style={styles.educationTitle}>
+              Algonquin College of Applied Arts and Technology
+            </Text>
+            <Text style={styles.educationDetails}>
+              Advanced Diploma, Biotechnology — Advanced (Co-op) · 3.1 GPA ·
+              Dean&apos;s List · 2015–2018
             </Text>
           </View>
         </View>

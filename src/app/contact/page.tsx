@@ -26,6 +26,7 @@ export default function Contact() {
           <Link
             href="https://calendly.com/shawilly"
             target="_blank"
+            rel="noopener noreferrer"
             className="flex-1"
           >
             <Button className="w-full cursor-pointer rounded-base border-2 border-border bg-main px-6 py-3 text-white shadow-light transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none dark:border-darkBorder dark:shadow-dark dark:hover:shadow-none">

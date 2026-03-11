@@ -34,6 +34,7 @@ export default function Links() {
         return (
           <Link
             target={link.name === 'Get in Touch' ? '_self' : '_blank'}
+            rel={link.name === 'Get in Touch' ? undefined : 'noopener noreferrer'}
             key={id}
             href={link.href}
           >

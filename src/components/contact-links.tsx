@@ -42,6 +42,7 @@ export default function ContactLinks() {
         return (
           <Link
             target={link.name === 'email' ? '_self' : '_blank'}
+            rel={link.name === 'email' ? undefined : 'noopener noreferrer'}
             key={id}
             href={link.href}
             className="w-full max-w-md"
