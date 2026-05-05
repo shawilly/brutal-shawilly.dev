@@ -46,6 +46,20 @@ const PROJECTS: {
     technologies: ['Go', 'Bubble Tea', 'SQLite', 'Lip Gloss'],
     repoUrl: 'https://github.com/shawilly/shell-quest',
   },
+  {
+    name: 'kogarashi.nvim',
+    description:
+      'A Neovim colorscheme inspired by kogarashi — the cold wind that signals the arrival of winter. Minimalist and cool-toned with full Treesitter and LSP support.',
+    technologies: ['Lua', 'Neovim'],
+    repoUrl: 'https://github.com/shawilly/kogarashi.nvim',
+  },
+  {
+    name: 'treescape.nvim',
+    description:
+      'Nature-inspired Vim and Neovim colorscheme with forest, waterfall, and meadow variants. Calm contrast, broad plugin support, and a lualine theme.',
+    technologies: ['Lua', 'Neovim'],
+    repoUrl: 'https://github.com/shawilly/treescape.nvim',
+  },
 ]
 
 export default PROJECTS

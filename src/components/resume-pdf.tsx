@@ -333,18 +333,18 @@ export function ResumePDF() {
             <Text style={styles.accomplishment}>
               <Text style={styles.bullet}>• </Text>
               <Text style={{ fontFamily: 'Helvetica-Bold' }}>
-                dev-portfolio
-              </Text>{' '}
-              – Full-stack portfolio template with Three.js, React-Redux, and
-              TypeScript
-            </Text>
-            <Text style={styles.accomplishment}>
-              <Text style={styles.bullet}>• </Text>
-              <Text style={{ fontFamily: 'Helvetica-Bold' }}>
                 shell-quest
               </Text>{' '}
               – Pirate-themed kids CLI learning game in Go (Bubble Tea TUI,
               SQLite, sandboxed shell, 17 real commands)
+            </Text>
+            <Text style={styles.accomplishment}>
+              <Text style={styles.bullet}>• </Text>
+              <Text style={{ fontFamily: 'Helvetica-Bold' }}>
+                kogarashi.nvim / treescape.nvim
+              </Text>{' '}
+              – Original Neovim colorschemes with Treesitter, LSP, and lualine
+              support
             </Text>
             <Text style={styles.accomplishment}>
               <Text style={styles.bullet}>• </Text>

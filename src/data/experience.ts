@@ -69,8 +69,8 @@ const PAST_ROLES: {
     technologies: ['TypeScript', 'React', 'Vim Script', 'Lua', 'Node.js'],
     accomplishments: [
       'Created react-simple-devicons - React library for SVG developer icons',
-      'Developed ponokai - Vim/Neovim color scheme with 10+ stars on GitHub',
-      'Built full-stack portfolio template with Three.js, React-Redux, and TypeScript',
+      'Published multiple Neovim colorschemes (ponokai, kogarashi.nvim, treescape.nvim, fallout.nvim) with combined 10+ GitHub stars',
+      'Built shell-quest - pirate-themed CLI learning game for kids using Go and Bubble Tea TUI',
       'Supported small businesses with cost-effective web solutions',
     ],
   },
