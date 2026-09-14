@@ -213,7 +213,7 @@ const skills = {
 export function ResumePDF() {
   return (
     <Document
-      title="Shane Williams - Senior Full-Stack Software Engineer"
+      title="Shane Williams - Lead Software Engineer"
       author="Shane Williams"
       subject="Resume / CV"
     >
@@ -221,7 +221,7 @@ export function ResumePDF() {
         {/* Header */}
         <View style={styles.header}>
           <Text style={styles.name}>SHANE WILLIAMS</Text>
-          <Text style={styles.title}>Senior Full-Stack Software Engineer</Text>
+          <Text style={styles.title}>Lead Software Engineer</Text>
           <View style={styles.contactRow}>
             <Text>Ireland (Remote Worldwide)</Text>
             <Text style={styles.contactSeparator}>•</Text>
@@ -248,15 +248,14 @@ export function ResumePDF() {
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Professional Summary</Text>
           <Text style={styles.summaryText}>
-            Senior Full-Stack Software Engineer with 5+ years of experience
-            architecting and delivering enterprise-grade production systems. I
-            bring a proven track record of building scalable IoT platforms,
-            internal tooling, and microservices. Currently leading technical
-            initiatives at ResourceKraft, processing real-time data from
-            thousands of IoT devices. Previously contributed to BioRender&apos;s
-            growth, building tools that support 4M+ scientists globally.
-            Passionate about developer experience, clean architecture, and
-            systems that scale.
+            Lead Software Engineer with 7+ years building production
+            systems. At ResourceKraft I lead a small engineering team on an
+            enterprise IoT energy platform, covering architecture,
+            engineering, and production ops, while working directly with
+            the client on what gets built. Still hands-on day to day, but
+            also responsible for the team&apos;s output and the client
+            relationship. Previously at BioRender, building tools that
+            supported 4M+ scientists.
           </Text>
         </View>
 

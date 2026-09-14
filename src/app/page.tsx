@@ -28,7 +28,7 @@ export default function Home() {
           Building scalable systems from IoT platforms and web/mobile apps
         </p>
         <p className="mt-2">
-          5+ years delivering enterprise production systems
+          7+ years delivering enterprise production systems
         </p>
         <p className="mt-4 text-sm opacity-80">Based in Ireland / Remote</p>
       </div>

@@ -9,9 +9,9 @@ const PAST_ROLES: {
 }[] = [
   {
     company: 'ResourceKraft & Full Stack Energy',
-    role: 'Senior Full-Stack Software Engineer',
+    role: 'Lead Software Engineer',
     description:
-      'Architecting and developing enterprise IoT energy management platforms. Building real-time monitoring systems for geothermal and EV charging infrastructure using TypeScript, Go, and modern cloud technologies.',
+      'Leading a small engineering team on an enterprise IoT energy management platform for geothermal and EV charging infrastructure, sold to commercial clients at six-figure annual contract values. I own the architecture, the delivery, and production ops, and work directly with the client on what gets built and when.',
     startDate: 'April 2024',
     endDate: 'Present',
     technologies: [
@@ -28,12 +28,12 @@ const PAST_ROLES: {
       'Grafana',
     ],
     accomplishments: [
-      'Architected full-stack IoT monitoring platform with real-time data visualization using Grafana and InfluxDB',
-      'Built Go microservices for high-throughput alert processing and MQTT message handling',
-      'Developed TypeScript/Fastify API with complex PostgreSQL queries for time-series energy data',
-      'Implemented enterprise auth with Keycloak SSO across multiple applications',
-      'Optimized EV smart charging algorithms, reducing energy waste by 15%',
-      'Set up Turborepo monorepo with shared packages for consistent code across apps',
+      'Lead a team of 2 developers, handling sprint planning, code review, and technical mentorship',
+      'Work directly with the client as the main technical point of contact, turning their priorities into actual architecture and roadmap decisions',
+      'Own full-stack delivery of the platform (Next.js apps, Go microservices, infrastructure), sold to commercial clients at six-figure annual contract values',
+      'Architected Go microservices for high-throughput MQTT/Sparkplug B ingestion and alert processing, plus a TypeScript/Fastify API handling complex time-series queries',
+      'Run production across staging, demo, and prod environments, and drive capacity and staffing conversations directly with the business',
+      'Optimized EV smart charging algorithms, cutting energy waste by 15%',
     ],
   },
   {
@@ -72,6 +72,20 @@ const PAST_ROLES: {
       'Published multiple Neovim colorschemes (ponokai, kogarashi.nvim, treescape.nvim, fallout.nvim) with combined 10+ GitHub stars',
       'Built shell-quest - pirate-themed CLI learning game for kids using Go and Bubble Tea TUI',
       'Supported small businesses with cost-effective web solutions',
+    ],
+  },
+  {
+    company: 'Innovapost',
+    role: 'Technical Support Analyst',
+    description:
+      'Technical support and automation for a large enterprise client in the Ottawa area, including scripted tooling for team workflows and night-shift French-language support.',
+    startDate: 'May 2013',
+    endDate: 'June 2015',
+    technologies: ['JavaScript', 'MySQL'],
+    accomplishments: [
+      'Wrote JavaScript and MySQL scripts to automate team workflows and handle data',
+      'Primary French-speaking agent on night shifts for a large client base',
+      'Ran outage mapping and issue trend studies, and reported findings to management',
     ],
   },
 ]

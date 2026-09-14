@@ -9,8 +9,8 @@ export default function About() {
             About Me
           </h1>
           <p className="leading-relaxed">
-            I&apos;m <span className="font-bold">Shane Williams</span>, a senior
-            full-stack software engineer with over 5 years experience building
+            I&apos;m <span className="font-bold">Shane Williams</span>, a lead
+            software engineer with over 7 years experience building
             production systems. I specialize in{' '}
             <span className="text-mainAccent dark:text-main">
               TypeScript, Go, React, and Node.js
@@ -18,9 +18,13 @@ export default function About() {
             , with a focus on scalable architectures and clean code.
           </p>
           <p className="mt-4 leading-relaxed">
-            Currently at ResourceKraft, I&apos;m architecting IoT energy
-            management platforms that process real-time data from thousands of
-            devices. Previously at BioRender, I helped scale internal tooling
+            Currently at ResourceKraft, I lead a small engineering team
+            delivering an enterprise IoT energy management platform. I own
+            the architecture, the delivery, and production operations, and
+            work directly with the client from roadmap through release. The
+            platform processes real-time data from thousands of devices and
+            is sold to commercial clients at six-figure annual contract
+            values. Previously at BioRender, I helped scale internal tooling
             for a platform used by millions of scientists worldwide.
           </p>
           <p className="mt-4 leading-relaxed">
