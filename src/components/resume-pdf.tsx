@@ -267,7 +267,7 @@ export function ResumePDF() {
           {PAST_ROLES.filter(
             (role) => role.company !== 'Open Source & Freelance',
           ).map((role, index) => (
-            <View key={index} style={styles.experienceItem}>
+            <View key={index} style={styles.experienceItem} wrap={false}>
               <View style={styles.experienceHeader}>
                 <View style={styles.companyRole}>
                   <Text style={styles.companyName}>{role.company}</Text>
