@@ -7,6 +7,15 @@ import {
   Link,
 } from '@react-pdf/renderer'
 import PAST_ROLES from '@/data/experience'
+import {
+  NAME,
+  TITLE,
+  CONTACT,
+  SUMMARY,
+  SKILLS_SUMMARY,
+  OPEN_SOURCE_PROJECTS,
+  EDUCATION,
+} from '@/data/resume'
 
 const colors = {
   primary: '#1a1a1a',
@@ -202,43 +211,32 @@ const styles = StyleSheet.create({
   },
 })
 
-const skills = {
-  'Languages & Frameworks':
-    'TypeScript, JavaScript, Go, React, Next.js, Node.js, Express, Fastify',
-  'Databases & Storage': 'PostgreSQL, MongoDB, MySQL, Redis, InfluxDB',
-  'Cloud & DevOps': 'AWS, GCP, Docker, Nginx, Turborepo, Git, CI/CD',
-  Specialized: 'MQTT, Keycloak, Grafana, Real-time Systems, IoT',
-}
-
 export function ResumePDF() {
   return (
     <Document
-      title="Shane Williams - Lead Software Engineer"
-      author="Shane Williams"
+      title={`${NAME} - ${TITLE}`}
+      author={NAME}
       subject="Resume / CV"
     >
       <Page size="A4" style={styles.page}>
         {/* Header */}
         <View style={styles.header}>
-          <Text style={styles.name}>SHANE WILLIAMS</Text>
-          <Text style={styles.title}>Lead Software Engineer</Text>
+          <Text style={styles.name}>{NAME.toUpperCase()}</Text>
+          <Text style={styles.title}>{TITLE}</Text>
           <View style={styles.contactRow}>
-            <Text>Ireland (Remote Worldwide)</Text>
+            <Text>{CONTACT.location}</Text>
             <Text style={styles.contactSeparator}>•</Text>
-            <Link src="mailto:shane@shawilly.dev" style={styles.contactLink}>
-              shane@shawilly.dev
+            <Link src={`mailto:${CONTACT.email}`} style={styles.contactLink}>
+              {CONTACT.email}
             </Link>
             <Text style={styles.contactSeparator}>•</Text>
-            <Text>+353 83 362 6936</Text>
+            <Text>{CONTACT.phone}</Text>
             <Text style={styles.contactSeparator}>•</Text>
-            <Link
-              src="https://linkedin.com/in/shanebarrywilliams"
-              style={styles.contactLink}
-            >
+            <Link src={CONTACT.linkedin} style={styles.contactLink}>
               LinkedIn
             </Link>
             <Text style={styles.contactSeparator}>•</Text>
-            <Link src="https://github.com/shawilly" style={styles.contactLink}>
+            <Link src={CONTACT.github} style={styles.contactLink}>
               GitHub
             </Link>
           </View>
@@ -247,23 +245,14 @@ export function ResumePDF() {
         {/* Professional Summary */}
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Professional Summary</Text>
-          <Text style={styles.summaryText}>
-            Lead Software Engineer with 7+ years building production
-            systems. At ResourceKraft I lead a small engineering team on an
-            enterprise IoT energy platform, covering architecture,
-            engineering, and production ops, while working directly with
-            the client on what gets built. Still hands-on day to day, but
-            also responsible for the team&apos;s output and the client
-            relationship. Previously at BioRender, building tools that
-            supported 4M+ scientists.
-          </Text>
+          <Text style={styles.summaryText}>{SUMMARY}</Text>
         </View>
 
         {/* Technical Skills */}
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Technical Skills</Text>
           <View style={styles.skillsGrid}>
-            {Object.entries(skills).map(([category, skillList]) => (
+            {Object.entries(SKILLS_SUMMARY).map(([category, skillList]) => (
               <View key={category} style={styles.skillCategory}>
                 <Text style={styles.skillCategoryTitle}>{category}</Text>
                 <Text style={styles.skillList}>{skillList}</Text>
@@ -316,70 +305,29 @@ export function ResumePDF() {
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Open Source & Side Projects</Text>
           <View style={styles.accomplishmentsList}>
-            <Text style={styles.accomplishment}>
-              <Text style={styles.bullet}>• </Text>
-              <Text style={{ fontFamily: 'Helvetica-Bold' }}>
-                react-simple-devicons
-              </Text>{' '}
-              – React library providing SVG icons for developer tools and
-              technologies
-            </Text>
-            <Text style={styles.accomplishment}>
-              <Text style={styles.bullet}>• </Text>
-              <Text style={{ fontFamily: 'Helvetica-Bold' }}>ponokai</Text> –
-              Vim/Neovim color scheme with 10+ GitHub stars
-            </Text>
-            <Text style={styles.accomplishment}>
-              <Text style={styles.bullet}>• </Text>
-              <Text style={{ fontFamily: 'Helvetica-Bold' }}>
-                shell-quest
-              </Text>{' '}
-              – Pirate-themed kids CLI learning game in Go (Bubble Tea TUI,
-              SQLite, sandboxed shell, 17 real commands)
-            </Text>
-            <Text style={styles.accomplishment}>
-              <Text style={styles.bullet}>• </Text>
-              <Text style={{ fontFamily: 'Helvetica-Bold' }}>
-                kogarashi.nvim / treescape.nvim
-              </Text>{' '}
-              – Original Neovim colorschemes with Treesitter, LSP, and lualine
-              support
-            </Text>
-            <Text style={styles.accomplishment}>
-              <Text style={styles.bullet}>• </Text>
-              Supported small businesses with cost-effective full-stack web
-              solutions
-            </Text>
+            {OPEN_SOURCE_PROJECTS.map((project, i) => (
+              <Text key={i} style={styles.accomplishment}>
+                <Text style={styles.bullet}>• </Text>
+                {project.name && (
+                  <Text style={{ fontFamily: 'Helvetica-Bold' }}>
+                    {project.name}
+                  </Text>
+                )}
+                {project.name ? ` – ${project.description}` : project.description}
+              </Text>
+            ))}
           </View>
         </View>
 
         {/* Education */}
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Education</Text>
-          <View style={styles.educationItem}>
-            <Text style={styles.educationTitle}>
-              Atlantic Technological University
-            </Text>
-            <Text style={styles.educationDetails}>
-              BSc (Honours) Medical Biotechnology
-            </Text>
-          </View>
-          <View style={styles.educationItem}>
-            <Text style={styles.educationTitle}>
-              Algonquin College of Applied Arts and Technology
-            </Text>
-            <Text style={styles.educationDetails}>
-              Advanced Diploma, Biotechnology
-            </Text>
-          </View>
-          <View style={styles.educationItem}>
-            <Text style={styles.educationTitle}>
-              Algonquin College of Applied Arts and Technology
-            </Text>
-            <Text style={styles.educationDetails}>
-              Advanced Diploma, Computer Science Engineering
-            </Text>
-          </View>
+          {EDUCATION.map((edu, i) => (
+            <View key={i} style={styles.educationItem}>
+              <Text style={styles.educationTitle}>{edu.school}</Text>
+              <Text style={styles.educationDetails}>{edu.details}</Text>
+            </View>
+          ))}
         </View>
 
         {/* Footer */}

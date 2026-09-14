@@ -1,5 +1,4 @@
 import PAST_ROLES from '@/data/experience'
-import Marquee from 'react-fast-marquee'
 import { Separator } from '@/components/ui/separator'
 import SKILLS from '@/data/skills'
 
@@ -11,21 +10,14 @@ const skills = SKILLS.flat()
 export default function Experience() {
   return (
     <div className="mx-auto mb-16 w-full rounded-base border-2 border-border bg-white px-4 py-4 text-sm font-base shadow-light transition-all dark:border-darkBorder dark:bg-secondaryBlack dark:text-darkText dark:shadow-dark sm:px-6 sm:text-base md:text-lg">
-      <h2 className="shimmer-text mb-4 font-[family-name:var(--font-press-start)] text-xl font-heading underline-offset-8 sm:text-2xl">
+      <h2 className="mb-4 text-2xl font-bold text-mainAccent dark:text-main sm:text-3xl">
         Experience
       </h2>
 
-      <div className="w-full overflow-hidden">
-        <Marquee
-          className="mb-6 w-full max-w-full border-y-2 border-y-border bg-white py-3 font-base dark:border-darkBorder dark:border-y-darkBorder dark:bg-secondaryBlack sm:py-5"
-          direction="left"
-        >
-          {skills.map((Icon) => (
-            <div key={Icon.displayName} className="mr-5">
-              <Icon />
-            </div>
-          ))}
-        </Marquee>
+      <div className="mb-6 flex w-full flex-wrap items-center gap-4 border-y-2 border-y-border bg-white py-3 font-base dark:border-y-darkBorder dark:bg-secondaryBlack sm:py-5">
+        {skills.map((Icon, i) => (
+          <Icon key={i} />
+        ))}
       </div>
 
       {PAST_ROLES.map((role, id) => {

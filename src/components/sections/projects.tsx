@@ -6,7 +6,7 @@ import Link from 'next/link'
 export default function Projects() {
   return (
     <div className="mx-auto mb-16 w-full">
-      <h2 className="shimmer-text mb-6 font-[family-name:var(--font-press-start)] text-xl font-heading sm:text-2xl">
+      <h2 className="mb-6 text-2xl font-bold text-mainAccent dark:text-main sm:text-3xl">
         Open Source
       </h2>
 

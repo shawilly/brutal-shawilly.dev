@@ -14,7 +14,7 @@ import SKILLS from '@/data/skills'
 export default function Skills() {
   return (
     <div className="mb-16">
-      <h2 className="mb-8 font-[family-name:var(--font-press-start)] text-xl font-heading underline underline-offset-8 dark:text-green-400 sm:text-2xl">
+      <h2 className="mb-8 text-2xl font-bold text-mainAccent dark:text-main sm:text-3xl">
         Skills
       </h2>
 

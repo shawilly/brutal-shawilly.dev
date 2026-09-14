@@ -1,12 +1,12 @@
 'use client'
 
 import TESTIMONIALS from '@/data/testimonial'
-import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar'
+import { Avatar, AvatarFallback } from '@/components/ui/avatar'
 
 export default function Testimonials() {
   return (
     <div className="mb-16 w-full px-4 py-2 text-sm font-base sm:text-base">
-      <h2 className="shimmer-text mb-8 font-[family-name:var(--font-press-start)] text-xl font-heading sm:text-2xl">
+      <h2 className="mb-8 text-2xl font-bold text-mainAccent dark:text-main sm:text-3xl">
         Testimonials
       </h2>
 
@@ -22,7 +22,6 @@ export default function Testimonials() {
 
             <div className="mt-4 flex items-center space-x-4">
               <Avatar>
-                <AvatarImage src={testimonial.image} alt={testimonial.name} />
                 <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
               </Avatar>
 

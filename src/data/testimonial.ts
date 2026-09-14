@@ -3,7 +3,6 @@ const TESTIMONIALS: {
   name: string
   designation: string
   company: string
-  image: string
 }[] = [
   {
     testimonial:
@@ -11,8 +10,6 @@ const TESTIMONIALS: {
     name: 'Shawn McKay',
     designation: 'Staff Software Engineer',
     company: 'BioRender',
-    image:
-      'https://cdn.theorg.com/f10923fa-bcc7-4cd5-a81b-0019e14de983_medium.jpg',
   },
   {
     testimonial:
@@ -20,8 +17,6 @@ const TESTIMONIALS: {
     name: 'Roman Blyshchyk',
     designation: 'Senior Software Engineer',
     company: 'BioRender',
-    image:
-      'https://media.licdn.com/dms/image/C4D03AQHgPyFHdpfM-g/profile-displayphoto-shrink_800_800/0/1537751506136?e=1712793600&v=beta&t=0e1ncu1epH73tX7VtRcmPXjgTJOj81GcLCAZsCaiwis',
   },
   {
     testimonial:
@@ -29,8 +24,6 @@ const TESTIMONIALS: {
     name: 'Francesca Ho',
     designation: 'Software Developer',
     company: 'BioRender',
-    image:
-      'https://media.licdn.com/dms/image/D4E03AQE2feJw9yiexQ/profile-displayphoto-shrink_800_800/0/1679290813022?e=1712793600&v=beta&t=i73K-UgBnlLXCewn8DeOF8czl-bJ3PpZ6f3tnF9H2Y4',
   },
 ]
 
